@@ -1,0 +1,17 @@
+.top_nav_bar{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000000000000;
+    font-size: 2.5rem;
+	z-index: 100001;
+
+}
+.top_nav_bar_home{
+    position: fixed;
+    top: 1rem;
+    z-index: 1000000000000;
+    right: 1rem;
+    font-size: 2.5rem;
+    z-index: 100001;
+}

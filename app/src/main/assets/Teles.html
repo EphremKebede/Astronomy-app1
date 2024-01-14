@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style_reading.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css\fontawesome-free-6.1.2-web\fontawesome-free-6.1.2-web\css\all.css">
+
+    <style>
+        .side_bar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: -100%;
+            min-height: 100vh;
+            width: 70%;
+            z-index: 1000058;
+            background: #000000;
+            /* background-position: center;
+	background-size: cover;
+	background-attachment: fixed; */
+            /* border-right: 1px solid #484848; */
+            transition: all 200ms linear;
+            /* box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.292); */
+            overflow-y: scroll;
+        }
+
+        .side_bar.active {
+            left: 0;
+        }
+
+
+        .side_bar .top {
+            height: 9rem;
+            /* background: #07256B; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            /* display: none; */
+        }
+
+        .side_bar .top .planet_of_the_top {
+            width: 15rem;
+            position: absolute;
+            left: -6rem;
+        }
+
+
+        .middle_bar {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-left: 2.2rem;
+            color: white;
+            margin-top: 5rem;
+        }
+
+        .middle_bar .list_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            color: rgb(255, 255, 255);
+            /* gap:1.6rem; */
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+        }
+
+        .middle_bar .list_img img {
+            width: 2rem;
+            margin-right: 1.5rem;
+        }
+
+        .solidbar {
+            width: 100%;
+            height: 0.05rem;
+            background-color: #ffffff;
+        }
+
+        .bottom_bar {
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+
+        .main_text .table_view_numeric_data .content_with_description .colored_text_as_heading {
+            font-size: 1.6rem;
+            color: #a2a2a2;
+        }
+
+
+        section.grbg {
+            top: 0.5rem;
+            height: 55rem;
+            width: 100%;
+            background: linear-gradient(to top, #a2a2a2 0%, #000000 100%);
+            position: fixed;
+        }
+
+
+
+        section.grbg .darkbtm .object_description .reading_page_description .colored_text {
+            color: #a2a2a2;
+            font-size: 1.6rem;
+        }
+
+
+        section.grbg .field h1 {
+            font-size: 4rem;
+            font-weight: 500;
+            color: #a2a2a2;
+            line-height: 6rem;
+            margin-top: 8rem;
+
+        }
+
+        section.grbg .field p {
+            font-size: 3rem;
+            font-weight: 500;
+            color:  #a2a2a2;
+            line-height: 4.6rem;
+            margin-top: -2rem;
+        }
+        .main_text{
+            margin-top: 25%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="side_bar">
+        <div class="top">
+            <section class="top center">
+                <div class="heading">
+                    <img class="oswlogo" src="images\osw.png" alt="">
+                    <p>Oro space</p>
+                    <h6>since 2017</h6>
+
+                </div>
+                <!-- <img class="topbar_img" src="images\icons\bar.png" alt=""> -->
+            </section>
+
+            <!-- <img class="planet_of_the_top" src="images\planets\earth.png" alt="">
+			<div class="sidebar_main_logo">
+				<a href="3D page.html">
+					<img src="images\logo.png" alt="">
+					<p>Astiroonoomii</p>
+				</a>
+			</div> -->
+
+
+        </div>
+        <div class="middle_bar">
+            <div class="list_img">
+                <a href="home.html" style="display: flex;align-items: center; "><img src="images\icons\home.png" alt="">
+                    <p>Baafata Hundee</p>
+                </a>
+
+            </div>
+            <div class="solidbar"></div>
+            <div class="list_img">
+
+
+                <a href="maalummaa_astiroonoomii.html" style="display: flex;align-items: center; "><img
+                        src="images\home\pyramid.png" alt="">
+                    <p>Maalummaa Astiroonoomii</p>
+                </a>
+
+
+
+            </div>
+
+            <div class="list_img">
+
+
+                <a href="Teles.html" style="display: flex;align-items: center; "><img src="images/home/telescop.png"
+                        alt="">
+                    <p>Teeleeskooppii</p>
+                </a>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="list_img">
+
+                <a href="urjii.html" style="display: flex;align-items: center; ">
+                    <img src="images/home/star.png" alt="">
+                    <p>Urjiilee</p>
+                </a>
+
+
+
+            </div>
+
+            <div class="list_img">
+                <a href="gaalaaksii.html" style="display: flex;align-items: center; "> <img src="images/home/galaxy.png"
+                        alt="">
+                    <p>Gaalaaksii</p>
+                </a>
+
+
+
+            </div>
+
+            <div class="list_img">
+                <a href="holqa.html" style="display: flex;align-items: center; "><img src="images/home/black hole.png"
+                        alt="">
+                    <p>Holqa Gurraacha</p>
+                </a>
+
+
+
+            </div>
+            <div class="list_img">
+                <a href="solarsystem.html" style="display: flex;align-items: center; "><img src="images/home/ss.png"
+                        alt="">
+                    <p>Sirna Aduu</p>
+                </a>
+
+
+
+            </div>
+            <div class="list_img">
+                <a href="sun.html" style="display: flex;align-items: center; "> <img src="images/home/sun.png" alt="">
+                    <p>Aduu</p>
+                </a>
+
+
+
+            </div>
+            <div class="solidbar"></div>
+            <div class="list_img">
+                <a href="about.html" style="display: flex;align-items: center; "> <img src="images\icons\info.png"
+                        alt="">
+                    <p>Waa'ee Keenya</p>
+                </a>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="bottom bottom_bar">
+            <p>Astiroonoomii for Android <br>v1.0 Yosan softwares Inc.</p>
+        </div>
+    </div>
+    <div class="canlcer"></div>
+    <div class="search_overlay"></div>
+    <!-- ----------- nav ------------ -->
+    <!-- <section class="navbaricons center">
+		<i class='fas fa-bars icon_of_bar' id="icon"></i>
+		<i class='fas fa-home' id="icon"></i>
+	</section> -->
+    <nav class="center">
+
+        <!-- <div class="search_bar">
+			<i class='fas fa-search' id="icon"></i>
+			<input type="search" placeholder="Search">
+		</div> -->
+    </nav>
+    <div class="top_nav_bar"><img src="images\icons\bars.png" alt="" style="width: 2.3rem;"
+            class='fas fa-bars icon_of_bar' id="icon"></div>
+    <div class="top_nav_bar_home"> <a href="about.html"><img src="images\icons\info.png" alt=""
+                style="width:2.7rem;"></a> </div>
+    <!-- -----------------top section------------- -->
+    <section class="top center">
+        <div class="heading">
+            <img class="oswlogo" src="images\osw.png" alt="">
+            <p>Oro space</p>
+            <h6>since 2017</h6>
+
+        </div>
+        <img class="topbar_img" src="images\icons\bar.png" alt="">
+    </section>
+    <div class="search_place_with_content">
+
+
+
+
+
+        <div class="search_bar" onkeyup="displayFunction()">
+            <img class="topbar_img" src="images\icons\search.png" alt="">
+
+            <input type="search" placeholder="Barbaadi" id="myInput" onkeyup="myFunction()">
+        </div>
+
+
+
+        <div class="listofsearchitems">
+            <ul id="myMenu">
+                <li class="listofsearch"><a href="astro_D.html"><img src="images/home/asteroid.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Aasteerooyidii <span style="visibility: hidden;">asteroid</span>
+                            </div>
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="sun.html"><img src="images/home/sun.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Aduu <span style="visibility: hidden;">sun biiftuu</span></div>
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="maalummaa_astiroonoomii.html"><img src="images\home\pyramid.png"
+                            alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Astiroonoomii <span style="visibility: hidden;">Astronomy</span>
+                            </div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="eris.html"><img src="images/home/eris.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Eerisii <span style="visibility: hidden;">Astronomy</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="gaalaaksii.html"><img src="images/home/galaxy.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Gaalaaksii <span style="visibility: hidden;">Galaxy</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="haumea.html"><img src="images/home/haumea.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Haawmeeyaa <span style="visibility: hidden;">Haumea</span></div>
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="holqa.html"><img src="images/home/black hole.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Holqa Gurraacha <span style="visibility: hidden;">Black Hole</span>
+                            </div>
+
+                        </div>
+                    </a></li>
+
+
+                <li class="listofsearch"><a href="Jupiter.html"><img src="images/home/jupiter.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Juuppiitarii <span style="visibility: hidden;">Jupiter</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="comet.html"><img src="images/home/comet.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Koomeetii <span style="visibility: hidden;">Comet</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="earth.html"><img src="images/home/earth.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Lafa <span style="visibility: hidden;">Earth</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="mars.html"><img src="images/home/mars.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Maarsii <span style="visibility: hidden;">Mars</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="makemake.html"><img src="images/home/makemake.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meeekmeek <span style="visibility: hidden;">makemake</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="meetiyooraayitii.html"><img src="images/home/meteorite.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meetiyooraayitii <span style="visibility: hidden;"></span>Meteorite
+                            </div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="meetiyoorii.html"><img src="images/home/meteor.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meetiyoorii <span style="visibility: hidden;">meteor</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="mercury.html"><img src="images/home/mercury.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meerkurii <span style="visibility: hidden;">mercury</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="neptune.html"><img src="images/home/neptune.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Neeppituunii <span style="visibility: hidden;">neptune</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="pluto.html"><img src="images/home/pluto.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Piluutoo <span style="visibility: hidden;">pluto</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="saturn.html"><img src="images/home/saturn.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Saatarnii <span style="visibility: hidden;">saturn</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="kuiper.html"><img src="images/home/kuiper.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Saqqii Kuupparii <span style="visibility: hidden;">Kuiper
+                                    belt</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="ceres.html"><img src="images/home/ceres.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Seerisii <span style="visibility: hidden;">Ceres</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="solarsystem.html"><img src="images/home/ss.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Sirna Aduu <span style="visibility: hidden;"> solar system sirna
+                                    biiftuu</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="Teles.html"><img src="images/home/telescop.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Teleskooppota <span style="visibility: hidden;">telescope</span>
+                            </div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="urjii.html"><img src="images/home/star.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Urjilee <span style="visibility: hidden;">Stars</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="venus.html"><img src="images/home/venus.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Veenasii <span style="visibility: hidden;">venus</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="uranus.html"><img src="images/home/uranus.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Yuuraanasii <span style="visibility: hidden;">uranus</span></div>
+
+                        </div>
+
+                        <div class="errormsg"><a href="#"><img src="images\circle.png" alt="">
+                                <div class="searchtextcatagory">Sorry Your Search is not found try another word
+                                </div>
+                            </a></div>
+
+            </ul>
+        </div>
+    </div>
+    <!-- --------------search bar----------------------- -->
+    <!-- 
+    bodyy -->
+    <section class="grbg">
+        <div class="field">
+            <h1>Teeleeskooppota</h1>
+            <p>Telescope</p>
+        </div>
+        <img style="transform: rotate(360deg) ; right: 5rem;" src="images\home\telescop.png" alt="">
+        <div class="darkbtm">
+            <div class="object_description">
+                
+            </div>
+        </div>
+    </section>
+    <section class="main_text">
+
+
+
+
+
+
+
+
+        <div class="main_topic" id="home">
+            <p>Seensa</p>
+        </div>
+
+        <div class="main_note">
+            <p>Astiiroonoomaroonni waa'ee hawaa keenyaa karaa odeeffannoo itti argtan keessaa inni gudaan meeshaalee
+                adda addaa fayyadamuudhani. meeshaaleen kunimmoo kan lafa irratti argaman,kan lafa keenya marsaa jiran,
+                kan pilaanetoota biraatti ergaman, fi kan ilma namaa qabatanii hawaa keessa deeman ni dabalata. <br><br>
+                Meeshaan astiroonoomaroonni yeroo jalqabaa qo'annoodhaf itti fayyadaman Ija isaanii ture. Akkuma beeknu
+                astiroonoomiin qo'annoo amma jalqabamee miti, yeroo ilmi namaa uummamee jalqabee kan ture dha. Abbootiin
+                keenyas yeroo durii samii ilaaludhaan urjiileedhaf maqaa kennaa turan fakkeenyaf <br><br>
+                ⦁ urjii Lammii yeroo kana astiroonoomii ammayyaatiin
+                "Triangulem" jedhamu <br><br>
+                ⦁ urjii Caamsaa yeroo kana astiroonoomii ammayyaatiin
+                "pleiads" jedhamu <br><br>
+                ⦁ urjii Bakkalacha yeroo kana astiroonoomii ammayyaatiin "Aldebarran" jedhamu <br><br>
+                ⦁ urjii Waxabajjii yeroo kana astiroonoomii ammayyaatiin "Belletrix" jedhamu <br><br>
+                ⦁ urjii Arb gaddu yeroo kana astiroonoomii ammayyaatiin
+                "Central Orion " jedhamu <br><br>
+                ⦁ urjii obbora guddaa yeroo kana astiroonoomii ammayyaatiin "Saiph" jedhamu <br><br>
+                ⦁ urjii obbora xiqqaa yeroo kana astiroonoomii ammayyaatiin" Sirius" jedhamu akka fakkeenyaatti kaasuu
+                dandeenya. <br><br>
+                </p>
+                <br><br>
+                <div class="main_object">
+                    <img src="images\planets\collection\journal.PNG" alt="">
+                    <div class="figure_descripiton"> fakkii 1 urjiilee Booranaa <br> (madda Barruulee Gadaa)</div>
+                </div><br>
+                <P>
+                Ijji keenya ifti ilaalee addaan baasuu danda'u muraasaa. Kanaaaf ija keenyaaf wanti ifa sana guddisee
+                muullisu baraachisaa dha. kanumarraa kan ka'e teeleeskooppiin uummame. <br><br>
+                Teeleeskooppiin ooptiikaalaa leensii fayyadamuudhan urjiilee fi qammoolee adda addaa hawaa keessatti
+                fagaatanii argaman ilaaluuf kan nu fayyadudha. ija keenya caalaas yeroo tokkotti ifa hedduu sassaabuu
+                danda'a. Teeleeskooppiin ooptikaalaa akkuma Maaykirooskooppii leensii dhaan kan hoojjatudha. walumaa
+                galatti teeleeskooppiin faayidaa lama nuuf keenna <br><br>
+                1. Ifa qaama Hawaa keessatti argamu irraa sassaabuuf fi <br><br>
+                2. qaama sana kallattiidhan ilaaluu <br><br>
+            </p>
+        </div>
+
+        <div class="main_topic" id="home">
+            <p>Teeleeskooppii ooptikaalaa</p>
+        </div>
+
+        <div class="main_note">
+            <p>Teeleeskooppiin ooptikaalaa gosa lamata qaba isaanis "Refractor" fi "Reflector" dha. <br><br>
+                • <b>Teeleeskooppii Refractor </b> <br><br>
+                Gosti teeleeskooppii kanaa yeroo duriitii jalqabee kan jiru yoo ta'u, Akka guddiftuuttis leensii
+                fayyadama. ujummoos ni qaba. Teeleeeskooppiin kun leensii lama iraa ijaarrama. inni guddaa fi tokkoffaan
+                "Objective lense" yoo jedhamuu gubbaa ujumooticharratti seenaa keessaa baasuun hin danad'amu inni
+                lamaffaanimmoo "ocular lens" kan jedhamudha. karaa ija keenyan keessaa laalludha. leenisiin kunis kan
+                keessaa buqqa'ee jijjiirramuu danda'udha. fageenyi/dheerinni "ocular lens" kaassee hanga bakka fakkiin
+                uummamutti jiru "Focal length" jedhama. Galiileyoo Galiileen bara 1610 teeleeskooppiin inni fayyadame
+                gosa teeleeskooppii kanaat ture. <br><br>
+                Yeroo ammaatti teeleeskooppiin Refractor guddichi adunyaarratti argamu leensii meetira 1 dheeratuu irraa
+                kan ijaarrame yoo ta'u ijaarsi isaatis kan dhume bara 1897 ture. kana argamus Biyya U.S.A isteetii
+                wiiskoonsiin iddoo wiiliiyaams beey jedhamutti yoo ta'u. iddoo qorannoo hawaa(observatory) "Yerkes"
+                Keessatti argama. <br><br>
+
+                </p>
+                <br><br>
+                <div class="main_object">
+                    <img src="images\planets\collection\refract.png" alt="">
+                    <div class="figure_descripiton"> fakkii 2 Teeleeskooppii Refractor</div>
+                </div><br><br>
+                <P>
+                • <b>Teeleeskooppii Riflactor </b><br><br>
+                Gosti teeleeskooppii inni lammaffaan immoo gosa teeleeesoopii ifa balaqqisuun (reflect) gochuudhan kan
+                fakkii uumanidha. Gosti teeleeskooppii duratti ilaallee (Refractor telescop) rakkoo hedduu qaba isaan
+                keessaa, <br><br>
+                ⦁ Ujummoon teeleeskooppiichaa kallattiidhan oso digirri 1 illee hin jallatin gara Urjii ilaaluu
+                barbaadne sanatti naana'uu qaba, ujummoon teeleeskooppii kanaatis dhiphaa waan ta'eef urjii sana
+                argachuuf rakkisaa isa godha. <br><br>
+                ⦁ yoo akka carraa ta'ee awwaarri ujummoo kana keessa seenee fakki nuti barbaadnu sana fiduu dhiisuu
+                dana'a <br><br>
+                ⦁ Yoo akka carraa ta'ee harki namaa leensii kanas tuqe rakkodha. <br><br>
+                Teeleeskooppiin "Reflactor" garuu rakkoo amma tarreessine kana furuu ni danda'a. <br><br></P>
+
+                <br>
+                <div class="main_object">
+                    <img src="images\planets\collection\reflect.png" alt="">
+                    <div class="figure_descripiton"> fakkii 3 Teeleeskooppii Riflactor</div>
+                </div><br>
+
+                <p>
+                Gosti teeleeskooppii kanaa kan ijaarramu leensii irraa osoo hin ta'iin daawwitii irraa'i. daawwitiin kun
+                kan taa'u ujummoo balaa qophhaa'eef keessa yoo ta'u akkuma fakkicharratti argitan ifti urjii
+                kallattiidhan daawwiti kna waliin waltti bu'uun fakkii iddoo piraayiim fookas jedhamutti uuma iddoo
+                kanatti daawitii xiqqoo fayyadamuudhan ifa daawwitii guddicharraa dhufe gara keenyatti qajeelchuu
+                dandeenya. <br><br>
+                Yeroo duraatif teeleeskooppii kana kan hojjate Aayiizaak niiwtan yoo ta'u bara 1688 ture.
+                Teeleeskooppiin kuniyyuu gosa 3 qaba garaagarummaa isaanii fakkii armaan gadiirratti laalaa. <br><br>
+                ⦁ Prime focus<br><br>
+                ⦁ Newtonian focus<br><br>
+                ⦁ Cassegrain focus<br><br>
+            </p>
+            <br>
+                <div class="main_object">
+                    <img src="images\planets\collection\focuses.PNG" alt="">
+                    <div class="figure_descripiton"> fakkii 4 Gosoota Teeleeskooppii Riflactor</div>
+                </div><br>
+        </div>
+
+        <div class="main_topic" id="home">
+            <p>Teeleeskooppii Raadiyoo</p>
+        </div>
+
+        <div class="main_note">
+            <p>Yoo tokko duubatti deebinee Dishii saatalaayitii baxii mana kenyaa irra jiru sana haa yaadannu.Fakkeenyaf
+                TV keenya BBC irra gonerra haa jennu. fakkii chaanaalii kanarrattii arginu kuni kan dhufu adeemsa armaan
+                gadiitini. <br><br>
+                ⦁ Yeroo oduun dubbifamu Kaameraafii maaykiraafoonidhaan ni waraabbama. <br><br>
+                ⦁ fakkiin waraabbame sun koompitaroota adda addaatin Akka nama hawwatu "Edit" godhamee keebiliidhan gara
+                diishii xiqqoo baaxii stuudiyoo BBC biyya UK jirutti darba. hanga diishii kanaatti fakkiin kun keebilii
+                keessa darbee. Dishiin kunis gara saatalaayitii naayilsaat gara kallatti 70 west naanna'ee kan
+                qophaa'edha. fakkin diishii kana bira ga'e kun bifa "Electro magnetic wave" tiin Diishii kanarraa gara
+                saatalaayitiii Naayilsaat (kan lafa keenya marsaa jirutti) darba. Wave kunis deebi'ee gara lafa
+                keenyaatti deebi'a. Diishiin gara saatalaayitii kanaatti naanna'ee jiru hundu "Electro magnetic wave"
+                kana ni fudhata jechuudha. Akkuma argitan wanti gurraattii maaykiraafoonii fakkaattu diishii keenyatti
+                hidhamtee jirti ishiirrattis keebiliin gurraacha "LNB" gara <br><br>
+                diikoodarii mana kenya keessatti argamutti hidhametu irratti argama, wave saatalaayitiirraa dhufe suni
+                erga diishii keenya waliin wal rukutee booda gara LNB keenyaa Reflect ta'uun odeeffannoon suni nubira
+                ga'a. <br><br>
+                Egaa Teeleeskooppiin Raadiyootis kan hojjatu bifa kanaani. teeleeskooppiin kun diishii fi qaama "main
+                mirror" jedhamuu qabatee jira. <br><br>
+                Urjiin tokko qaama isaatirraa bifa weevii raadiyootin odeeffannoo ni gadhiisa. odeeffannoo yeroon jedhuu
+                akka istuudiyoo BBC kan kaameraadhan waraabbame osoo hin ta'in bifa ho'aa fi ifaatin jechuu kooti.
+                weeviin kunis akka weevii ooptikaalaa sababa xiqqoodhan kan dhowwamuu miti. wantoota karaa isaa
+                keessatti argaman hundayyuu keessa ba'ee nubira ga'uu danda'a. kanaaf odeeffannoo baayyee ta'e argachuuf
+                tooftaan kun baayyee gaaridha. <br><br>
+                Odeeffannoon urjii nuti waa'ee isaa beekuu barbaadne irraa dhufe suni diishii nuti qopheessineerrattii
+                sassaabama. achii gara main mirror itti reflect ta'uudhan, gara koompitara odeeffannoon kun ilma
+                namaatif galu godhutti darba. Koompitarri kunis odeeffannoo kana bifa salphaa ta'een qindeessee ilma
+                namaatif dabarsa. <br><br>
+                Tooftaan raadiyoo teeleeskooppii kan jalqabame bara 1931 yoo ta'u yeroo duraatifis nama Karl G. Janksy
+                jedhamuun ture. <br><br>
+            </p>
+
+            <br>
+            <div class="main_object">
+                <img src="images\planets\collection\radio.png" alt="">
+                <div class="figure_descripiton"> fakkii 5 Teeleeskooppii Raadiyoo </div>
+            </div><br>
+        </div>
+
+        <div class="main_topic" id="home">
+            <p>Teeleeskooppii Infiiraareedii </p> <br>
+        </div>
+
+        <div class="main_note">
+            <p>Gosti teeleeskooppii kanaa weevii teleeskooppii ooptikaalaa fi radiyoodhan hin muullanne kan argu
+                danada'udha. Garuu weeviin kun jiidha fi suuddoowwan baqqaana keenya keessa jiraniin haguuggamuu waan
+                fdana'uuf teeleekskooppiin kun bakka gogaa ta'eefi bakkaa gaara ta'etti ijaarramma. <br><br>
+                Teeleeskooppiin infiraareedii boca adda ta'e hin qabu yoo nutti himame/ sirriitti ilaallee malee
+                teeleeskooppi optikaalaa waliin garaaarummaan inni qabuxiqqaa dha. Teeleeskooppii optikaalaa haala
+                salphaa ta'een gara teeleeskooppi infirareeddiitti jijjiiruu ni dandeenya. Garaagarummaan isaanii
+                Teeeleeskooppiin infiraareedii iddoo prime focus jedhamutti diivaayisii hoo'aa adda baasuu danda'u qaba.
+                <br><br>
+                Teeleeskooppiin kun yeroo duraatiif kan ijaarrame bara 1960 oota keessa ture. divaayisiin hoo'a adda
+                baasu kun hanga -2710c iitti teempireecharri isaa gadi bu'aadha sababni isaas hoo'a gosa hunda akka adda
+                basuu danda'u taasisuufi. <br><br>
+                Akkuma duraan kaasne bishaan fi kaarboon daay oksaayidiin Atimoosfeerii keenya keessatti argamu
+                caraallaa infraaredii kana of keessatti xuuxuu dand'a . kanaaf kaarboon daay okisaayidii fi bishaan kana
+                ittisuudhaf maloota armaan gadii fayyadamna. <br><br>
+                ⦁ Teeleeskooppii keenya gaara gogaa ta'eefi olaanaa ta'etti ijaaruu. biyyi Chiilii Ameriikaa kibbaa
+                keessatti argamtus ijaarsa kanaaf filatamtuudha. <br><br>
+                ⦁ Teeleeskooppii keenya xiyyaara keessatti ijaaruu. karaa kanaan teeleeskooppii infiraaredii ijaaruun
+                bara 1960 jalqabee kan ture dha. Yero ammaa kana NASA fi GAC walin ta'uun teeleeskooppii gosa kanaa kan
+                ta'eefi diiyaameetira meetira 2.5 kan dheeratu Teeleeskooppii SOFIA jedhamu ijaaraniiru. Stratospheric
+                Observatory For Infrared Astronomy. Xiyyaarri teeleeskooppi kana baatee jiru lafa irraa kiiloomeetira 12
+                fagaachuudhan argama. iddoo kanatti jiidhni Qilleensa naannoo kana keessa jiru qilleensa nuti keessa
+                jirru irraa 99% ni hirrata.
+            </p>
+            <br>
+                <div class="main_object">
+                    <img src="images\planets\collection\SOFIA.png" alt="">
+                    <div class="figure_descripiton"> fakkii 6 SOFIA </div>
+                </div><br>
+        </div>
+
+        <div class="main_topic" id="home">
+            <p>Teeleeskooppii "Ultraviolet,X-ray fi Gamma ray"</p> <br>
+        </div>
+
+        <div class="main_note">
+            <p>Gosti teeleeskooppii kun yeroo duraatif kan hojiirra oole bara 1946 ture. Yeroo waraana addunyaa
+                lammaffaa Ameerikaan rookkeetti V2 Jarmanii irraa fudhatte fooyyeessun meeshaalee "ultiraviolet" ada
+                baasuu danda'n irratti qabsiistee raadiiyeeshinii aduurraa dhufu ittiin sassaabaa turte. Yeruma kanatti
+                qorannoon jalqabame itti fufuudhan "X-ray" fi "gamma-ray" dabalatee qorannoon Aduu fi qaamolee adda
+                addaa aduu keenya keessatti argaman irratu gaggeefamaa jira. <br><br>
+                Teeleeskooppii kana fayyadamuudhaf dirqama teeleeskooppichi lafa keenyaa ala hawaa keessa ta'u qaba.
+                bara 1960 jalqabees qorannoon gosa kanaa itti fufee jira. Teeleeskooppii gosa kanaa kan ta'e "Chandra
+                X-ray observatory" akka fakkeenyaatti fudhacuu dandeenya. <br><br>
+            </p>
+            <br>
+                <div class="main_object">
+                    <img src="images\planets\collection\HOPKINS.png" alt="">
+                    <div class="figure_descripiton"> fakkii 7 Teeleeskooppii <br>"Ultraviolet" Hoopkiins  </div>
+                </div><br>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        <!-- <h1 class="stickyheader">MAARSII</h1> -->
+        <div class="arrow_links_back_and_forth">
+            <a href="maalummaa_astiroonoomii.html"><div class="arrow_link_left"><img src="images/icons/arrowleft.png" alt=""></div></a> 
+            <a href="urjii.html"><div class="arrow_link_right"><img src="images/icons/arrowright.png" alt=""></div></a> 
+         </div>
+    </section>
+
+</body>
+<script src="js/main_reading.js"></script>
+<script src="js/main.js"></script>
+<!-- <script>
+    let nanu = document.querySelectorAll('.main_text .reading_page_tags');
+function activeLink(){
+    nanu.forEach((item) =>
+    item.classList.remove('hovered'));
+    this.classList.add('hovered');
+}
+nanu.forEach((item) =>
+item.addEventListener('mouseover',activeLink)); -->
+
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style_reading.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css\fontawesome-free-6.1.2-web\fontawesome-free-6.1.2-web\css\all.css">
+
+    <style>
+        .side_bar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: -100%;
+            min-height: 100vh;
+            width: 70%;
+            z-index: 1000058;
+            background: #000000;
+            /* background-position: center;
+	background-size: cover;
+	background-attachment: fixed; */
+            /* border-right: 1px solid #484848; */
+            transition: all 200ms linear;
+            /* box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.292); */
+            overflow-y: scroll;
+        }
+
+        .side_bar.active {
+            left: 0;
+        }
+
+
+        .side_bar .top {
+            height: 9rem;
+            /* background: #07256B; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            /* display: none; */
+        }
+
+        .side_bar .top .planet_of_the_top {
+            width: 15rem;
+            position: absolute;
+            left: -6rem;
+        }
+
+
+        .middle_bar {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-left: 2.2rem;
+            color: white;
+            margin-top: 5rem;
+        }
+
+        .middle_bar .list_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1rem;
+            color: rgb(255, 255, 255);
+            /* gap:1.6rem; */
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+        }
+
+        .middle_bar .list_img img {
+            width: 2rem;
+            margin-right: 1.5rem;
+        }
+
+        .solidbar {
+            width: 100%;
+            height: 0.05rem;
+            background-color: #ffffff;
+        }
+
+        .bottom_bar {
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+
+        .main_text .table_view_numeric_data .content_with_description .colored_text_as_heading {
+            font-size: 1.6rem;
+            color: #75481d;
+        }
+
+
+        section.grbg {
+            top: 0.5rem;
+            height: 55rem;
+            width: 100%;
+            background: linear-gradient(to top, #713014 0%, #000000 100%);
+            position: fixed;
+        }
+
+
+
+        section.grbg .darkbtm .object_description .reading_page_description .colored_text {
+            color: #823e21;
+            font-size: 1.6rem;
+        }
+
+
+        section.grbg .field h1 {
+            font-size: 4rem;
+            font-weight: 500;
+            color: #713014;
+            line-height: 6rem;
+            margin-top: 8rem;
+
+        }
+
+        section.grbg .field p {
+            font-size: 3rem;
+            font-weight: 500;
+            color:#713014;
+            line-height: 4.6rem;
+            margin-top: -2rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="side_bar">
+        <div class="top">
+            <section class="top center">
+                <div class="heading">
+                    <img class="oswlogo" src="images\osw.png" alt="">
+                    <p>Oro space</p>
+                    <h6>since 2017</h6>
+
+                </div>
+                <!-- <img class="topbar_img" src="images\icons\bar.png" alt=""> -->
+            </section>
+
+            <!-- <img class="planet_of_the_top" src="images\planets\earth.png" alt="">
+        <div class="sidebar_main_logo">
+            <a href="3D page.html">
+                <img src="images\logo.png" alt="">
+                <p>Astiroonoomii</p>
+            </a>
+        </div> -->
+
+
+        </div>
+        <div class="middle_bar">
+            <div class="list_img">
+                <a href="home.html" style="display: flex;align-items: center; "><img src="images\icons\home.png" alt="">
+                    <p>Baafata Hundee</p>
+                </a>
+
+            </div>
+            <div class="solidbar"></div>
+            <div class="list_img">
+
+
+                <a href="maalummaa_astiroonoomii.html" style="display: flex;align-items: center; "><img
+                        src="images\home\pyramid.png" alt="">
+                    <p>Maalummaa Astiroonoomii</p>
+                </a>
+
+
+
+            </div>
+
+            <div class="list_img">
+
+
+                <a href="Teles.html" style="display: flex;align-items: center; "><img src="images/home/telescop.png"
+                        alt="">
+                    <p>Teeleeskooppii</p>
+                </a>
+
+
+
+
+            </div>
+
+
+
+
+            <div class="list_img">
+
+                <a href="urjii.html" style="display: flex;align-items: center; ">
+                    <img src="images/home/star.png" alt="">
+                    <p>Urjiilee</p>
+                </a>
+
+
+
+            </div>
+
+            <div class="list_img">
+                <a href="gaalaaksii.html" style="display: flex;align-items: center; "> <img src="images/home/galaxy.png"
+                        alt="">
+                    <p>Gaalaaksii</p>
+                </a>
+
+
+
+            </div>
+
+            <div class="list_img">
+                <a href="holqa.html" style="display: flex;align-items: center; "><img src="images/home/black hole.png"
+                        alt="">
+                    <p>Holqa Gurraacha</p>
+                </a>
+
+
+
+            </div>
+            <div class="list_img">
+                <a href="solarsystem.html" style="display: flex;align-items: center; "><img src="images/home/ss.png"
+                        alt="">
+                    <p>Sirna Aduu</p>
+                </a>
+
+
+
+            </div>
+            <div class="list_img">
+                <a href="sun.html" style="display: flex;align-items: center; "> <img src="images/home/sun.png" alt="">
+                    <p>Aduu</p>
+                </a>
+
+
+
+            </div>
+            <div class="solidbar"></div>
+            <div class="list_img">
+                <a href="about.html" style="display: flex;align-items: center; "> <img src="images\icons\info.png"
+                        alt="">
+                    <p>Waa'ee Keenya</p>
+                </a>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="bottom bottom_bar">
+            <p>Astiroonoomii for Android <br>v1.0 Yosan softwares Inc.</p>
+        </div>
+    </div>
+    <div class="canlcer"></div>
+    <div class="search_overlay"></div>
+    <!-- ----------- nav ------------ -->
+    <!-- <section class="navbaricons center">
+    <i class='fas fa-bars icon_of_bar' id="icon"></i>
+    <i class='fas fa-home' id="icon"></i>
+</section> -->
+    <nav class="center">
+
+        <!-- <div class="search_bar">
+        <i class='fas fa-search' id="icon"></i>
+        <input type="search" placeholder="Search">
+    </div> -->
+    </nav>
+    <div class="top_nav_bar"><img src="images\icons\bars.png" alt="" style="width: 2.3rem;"
+            class='fas fa-bars icon_of_bar' id="icon"></div>
+    <div class="top_nav_bar_home"> <a href="about.html"><img src="images\icons\info.png" alt=""
+                style="width:2.7rem;"></a> </div>
+    <!-- -----------------top section------------- -->
+    <section class="top center">
+        <div class="heading">
+            <img class="oswlogo" src="images\osw.png" alt="">
+            <p>Oro space</p>
+            <h6>since 2017</h6>
+
+        </div>
+        <img class="topbar_img" src="images\icons\bar.png" alt="">
+    </section>
+    <div class="search_place_with_content">
+
+
+
+
+
+        <div class="search_bar" onkeyup="displayFunction()">
+            <img class="topbar_img" src="images\icons\search.png" alt="">
+
+            <input type="search" placeholder="Barbaadi" id="myInput" onkeyup="myFunction()">
+        </div>
+
+
+
+        <div class="listofsearchitems">
+            <ul id="myMenu">
+                <li class="listofsearch"><a href="astro_D.html"><img src="images/home/asteroid.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Aasteerooyidii <span style="visibility: hidden;">asteroid</span>
+                            </div>
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="sun.html"><img src="images/home/sun.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Aduu <span style="visibility: hidden;">sun biiftuu</span></div>
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="maalummaa_astiroonoomii.html"><img src="images\home\pyramid.png"
+                            alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Astiroonoomii <span style="visibility: hidden;">Astronomy</span>
+                            </div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="eris.html"><img src="images/home/eris.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Eerisii <span style="visibility: hidden;">Astronomy</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="gaalaaksii.html"><img src="images/home/galaxy.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Gaalaaksii <span style="visibility: hidden;">Galaxy</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="haumea.html"><img src="images/home/haumea.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Haawmeeyaa <span style="visibility: hidden;">Haumea</span></div>
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="holqa.html"><img src="images/home/black hole.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Holqa Gurraacha <span style="visibility: hidden;">Black Hole</span>
+                            </div>
+
+                        </div>
+                    </a></li>
+
+
+                <li class="listofsearch"><a href="Jupiter.html"><img src="images/home/jupiter.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Juuppiitarii <span style="visibility: hidden;">Jupiter</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="comet.html"><img src="images/home/comet.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Koomeetii <span style="visibility: hidden;">Comet</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="earth.html"><img src="images/home/earth.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Lafa <span style="visibility: hidden;">Earth</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="mars.html"><img src="images/home/mars.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Maarsii <span style="visibility: hidden;">Mars</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="makemake.html"><img src="images/home/makemake.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meeekmeek <span style="visibility: hidden;">makemake</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="meetiyooraayitii.html"><img src="images/home/meteorite.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meetiyooraayitii <span style="visibility: hidden;"></span>Meteorite
+                            </div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="meetiyoorii.html"><img src="images/home/meteor.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meetiyoorii <span style="visibility: hidden;">meteor</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="mercury.html"><img src="images/home/mercury.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Meerkurii <span style="visibility: hidden;">mercury</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="neptune.html"><img src="images/home/neptune.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Neeppituunii <span style="visibility: hidden;">neptune</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="pluto.html"><img src="images/home/pluto.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Piluutoo <span style="visibility: hidden;">pluto</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="saturn.html"><img src="images/home/saturn.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Saatarnii <span style="visibility: hidden;">saturn</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="kuiper.html"><img src="images/home/kuiper.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Saqqii Kuupparii <span style="visibility: hidden;">Kuiper
+                                    belt</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="ceres.html"><img src="images/home/ceres.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Seerisii <span style="visibility: hidden;">Ceres</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="solarsystem.html"><img src="images/home/ss.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Sirna Aduu <span style="visibility: hidden;"> solar system sirna
+                                    biiftuu</span></div>
+
+                        </div>
+                    </a></li>
+
+                <li class="listofsearch"><a href="Teles.html"><img src="images/home/telescop.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Teleskooppota <span style="visibility: hidden;">telescope</span>
+                            </div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="urjii.html"><img src="images/home/star.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Urjilee <span style="visibility: hidden;">Stars</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="venus.html"><img src="images/home/venus.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Veenasii <span style="visibility: hidden;">venus</span></div>
+
+                        </div>
+                    </a></li>
+                <li class="listofsearch"><a href="uranus.html"><img src="images/home/uranus.png" alt="">
+                        <div class="searchtextcatagory">
+                            <div id="to_be_searched">Yuuraanasii <span style="visibility: hidden;">uranus</span></div>
+
+                        </div>
+
+                        <div class="errormsg"><a href="#"><img src="images\circle.png" alt="">
+                                <div class="searchtextcatagory">Sorry Your Search is not found try another word
+                                </div>
+                            </a></div>
+
+            </ul>
+        </div>
+    </div>
+    <!-- --------------search bar----------------------- -->
+    <!-- 
+    bodyy -->
+    <section class="grbg">
+        <div class="field">
+            <h1>Koomeetii</h1>
+            <p>Comet</p>
+        </div>
+        <img style="transform:rotate(-90deg); top: 0rem;" src="images\home\comet.png" alt="">
+        <div class="darkbtm">
+            <div class="object_description">
+                <div class="reading_page_description">
+                    <p class="colored_text">Baayyina (Kan Beekkaman)</p>
+                    <p class="white_text">≈ 4584</p>
+                </div>
+
+                <div class="reading_page_description">
+                    <p class="colored_text">Fageenya Aduurraa Qabu</p>
+                    <p class="white_text">Daangaa Sirna Aduurraa <br> Kaasee - km mil 55</p>
+                </div>
+
+                <div class="reading_page_description">
+                    <p class="colored_text">Hanga waliigalaa</p>
+                    <p class="white_text">10 <sup>26
+                    </sup> kg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main_text">
+
+
+
+
+
+
+
+
+        <div class="main_topic" id="home">
+            <p>Seensa</p>
+        </div>
+
+        <div class="main_note">
+            <p>Koomeetiin akkuma pilaanetootaa kan aduu naanna'u yoo ta'u, kan adda baafamee ittiin beekkamus egee
+                bareedaa qabaachuu isaatini. Koomeetiin tokko hamma yeroo pilaanetoota gudguddootin harkifamee orbiitii
+                isaa hin gadhiisnetti oorbiitii dhaabbataa qabachuun Aduu naanna'a. Yeroo durii koomeetiin yeroo
+                muullatu namoonni akka carra badaa/ fuldurri isaanii/ gaarii akka hin taanetti fudhatu ture. Garuu
+                koomeetiin akkuma pilaanetootaafii asteerooyidoota qaama srna hawaa keenya keessaa tokko ta'un kan
+                beekkamtudha.koomeetoonni kan cabbiirraa ijaarramanidha. kana jechuun yeroo lafti keenya uummamtu
+                koomeetiiwwan akka bishaan dhiyeessituutti gargaaraa turan jechuudha. <br><br>
+                Maqaan koomeet jedhu afaan Griik / latin irraa kan fudhatame yoo ta’u<br><br>
+                ⦁ Giriik------"Kometes"<br>
+                ⦁ Laatiini-------"cometa"<br><br>
+                Afaan lamaaninuu hiikni isaa rifeensa dheeraa/ Long hair/ jechuudha.Akkuma fakkii armaan gadiitirratt
+                ilaaltan komeetiin kun gara mataa isaatti ifaa kan ta’eefi dheerachaa kan deemudha.
+            </p>
+            <br>
+                <div class="main_object">
+                    <img src="images\planets\collection\comet\comet.jpg" alt="">
+                    <div class="figure_descripiton"> fakkii 1 Koomeetii</div>
+                </div><br>
+        </div>
+
+        <div class="main_topic" id="home">
+            <p>Faayidaa</p>
+        </div>
+
+        <div class="main_note">
+            <p>Pilaanetoonni fi addeessonni isaanii erga uummamanii qabee hanga ammaatti jijjiirrama hedduu agarsiisaa
+                dhufaniiru. Fakkeenyaf addeesa keenya yoo ilaalle Aseerooyidoota heddiudhan rukutamaa turte. kana malees
+                addeessa juuppiitarii kan taate Aayoo ("Io") voolkaanoo cicimoo heddutu irratti argama kunimmoo
+                qaamoolee kanarraa odeeffannoo durii argachuudhaf rakkisaa isaan godha.Odeeffanno durii yoon jedhu
+                odeeffannoo yeroo jalqabaa qaamooleen kun uummamanitti ture jechuufi. <br><br>
+                Koomeetiiwwan immoo rakkoo armaan olii kana furu ni danda'u.Koomeetiiwwan hedduun yeroo duriitii kasee
+                hanga ammaatti qaama isaani osoo hin rukichiisiin turuun isaani koometiiwwan kana odeeffanno nu
+                barbaachisu irraa akka argannu godhaniiru. <br><br>
+                Kana malees, albuudota adda addaa lafa keenyafi pilaanetoota adda addaatif geessaa turan.Fedhii
+                isaanitiin osoo hin ta'in harkisa pilaanetooticharraa kan ka'e dha. koomeetiiwwan kunis yeroo pilaanetii
+                kana waliin walitti bu'an ergaa isaanii geessisan jechuu mitire?
+            </p>
+            <br>
+                <div class="main_object">
+                    <img src="images\planets\collection\comet\io.jpg" alt="">
+                    <div class="figure_descripiton"> fakkii 2 Addeessa "Io" </div>
+                </div><br>
+        </div>
+
+        <div class="main_topic" id="home">
+            <p>Qaamolee</p>
+        </div>
+
+        <div class="main_note">
+            <p>Koomeetiin tokko qaamolee 4 qaba isaanis <br><br>
+                1. Nuukilasii /Nucleus/ <br><br>
+                2. koomaa /Coma/ <br><br>
+                3. Eegee /Tail/ fi <br><br>
+                4. Duumeessa Haayidiroojiinii /Hydrogen cloud/ dha. <br><br>
+                </p>
+                <br>
+                <div class="main_object">
+                    <img src="images\planets\collection\comet\parts of tail.jpg" alt="">
+                    <div class="figure_descripiton"> fakkii 3 Qaamolee Komeetii</div>
+                </div><br>
+
+                <p>
+                1. <b>Nuukilasii (Nucleus)</b> <br>
+                Nuukilasiin qaama koomeetii isa guddicha. Yeroo hoo'a argatus hurkuun gara egeetti dheerachaa deema.
+                Nuukilasiin koomeetii kan ijaarrame gaazota cabbaa'oo (frozen gases) fi hurka bishaanii iirraa'i.Bishaan
+                Nuukilasii kana keessatti argamu 80% gara eegeetti kan jijjirramu yoo ta'u 20% hafemmoo
+                CO2,CO,NH4,CH4,CH,O,N, qabatees argama. <br><br>
+                Bara 1950 Nuukilasiin koomeetii maal akka fakkaatuu namni dura fakkii kaasee agarsiise Astiiroonoomarii
+                USA kan ta'e "fred whipple" ture. <br><br>
+                2. <b>Koomaa (coma) </b> <br>
+                Nuukilasiin koomeetii yeroo hoo'a argatu gaaziiwwan duratti tarreessine turre keessaa ba'uun eegee
+                ta'uun dura nuukilasii marsuun akka ifa godhatu godhu, wantuma kanaan koomaa jenne waamna. <br><br>
+                3.<b> Eegee (Tail)</b><br>
+                Osoo koomeetiin eegee qabaachuu baatee salphumattimAsteerooyidii jennee waamna ture, eegee qabaachuun
+                isaa garuu koomeetii isa taasiseera.
+                Eegeen koomeetii bakka lamatti kan hiramu yoo ta'u maddi isaa garuu tokko.Yeroo gaaziiwwan adda addaa
+                hurkanii eegee uuman caraallaa aaltiraa vaayooleetii Aduurraa maddu eegee kana bakka lamtti hira.
+                isaanis <br><br>
+                I. Eegee aayoonii (Ion) fi <br>
+                II. Eegee suuddoowwan moolookiyuulaatti addan baasa. <br><br>
+                Eegeen ion baayyee dheeraa ta'eefi sarara qajeelaa ta'een kan deemnu yoo ta'u Eegeen
+                moolookiyuulaariimmoo gama biraatiin gabaabaa, ballaa fi kan jallachaa deemudha. <br><br>
+                4. <b> Duumeessa Haayidiroojiinii </b><br>
+                Yeroo koompaawindiin tokko garmalee hoo'a argatu hanga "Ionized" ta'utti addaan baba'uu itti fufa.
+                Kanaaf Koomeetiin osoo gutumaan guutuuttti ho'a aduu argatu ta'e, ni badaayyu. Galata duumeessa
+                haayidiroojiinii nukilasii koometii marsee jiruuf haata'uuti, koometiin akka hin dhamne fayyada.
+                Elmantii hawaa keena keessatti argaman keessa baayyinaan kan argamu haayidiroojiiniin Nuukilasii
+                koomeetii marsuudhan Bubbee soolaarii (solar wind) aduurraa gadhiifamu hang ta'ee kommeetirraa dhowwa.
+                iddoon duumeesssi haayidiroojiinii fi bubbeen soolaarii walxuqan "Bow shok" jedhamuun beekkama. Madda
+                koomeetii <br><br>
+                koomeetiiwwan kan dhufan naannoo duummeessa oort (oort cloud) jedhamurraa'i. iddoon kun aduurraa naannoo
+                bara ifaa 1 fagaata.Koomeetiiwwan "short period" jedhaman garuu naannoo saqqii kuuppari irraa dhufan.
+                koomeetiiwwan tokko tokko pilanetoota gudguddoo maddii yeroo darban harkisa pilaanetii sanaatiin
+                harkifamanii gara pilaanetii sanaatti kufuu danda'u.yaadni kun yeroo baayyee pilaanetii juupiitarii
+                waliin waqabata. <br><br>
+
+            </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <h1 class="stickyheader">MAARSII</h1> -->
+        <div class="arrow_links_back_and_forth">
+            <a href="astro_D.html"><div class="arrow_link_left"><img src="images/icons/arrowleft.png" alt=""></div></a> 
+            <a href="kuiper.html"><div class="arrow_link_right"><img src="images/icons/arrowright.png" alt=""></div></a> 
+         </div>
+    </section>
+
+</body>
+<script src="js/main_reading.js"></script>
+<script src="js/main.js"></script>
+<!-- <script>
+    let nanu = document.querySelectorAll('.main_text .reading_page_tags');
+function activeLink(){
+    nanu.forEach((item) =>
+    item.classList.remove('hovered'));
+    this.classList.add('hovered');
+}
+nanu.forEach((item) =>
+item.addEventListener('mouseover',activeLink)); -->
+
+</html>
